@@ -1,0 +1,18 @@
+import canonicalLaneMathlib.AdmissibleClass
+import ComparisonPlStructuresClassificationHauptvermutungTheoremCanonicalLaneLean.PLTriangulation
+import ComparisonPlStructuresClassificationHauptvermutungTheoremCanonicalLaneLean.HomeomorphismRecognition
+import ComparisonPlStructuresClassificationHauptvermutungTheoremCanonicalLaneLean.ObstructionTheory
+import ComparisonPlStructuresClassificationHauptvermutungTheoremCanonicalLaneLean.SurgeryTheory
+
+namespace HautevilleHouse
+namespace ComparisonPlStructuresClassificationHauptvermutungTheoremCanonicalLaneLean
+
+def ConstrainedHauptvermutungClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_hauptvermutung_endgame (A : AdmissibleClass) :
+    ConstrainedHauptvermutungClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end ComparisonPlStructuresClassificationHauptvermutungTheoremCanonicalLaneLean
+end HautevilleHouse

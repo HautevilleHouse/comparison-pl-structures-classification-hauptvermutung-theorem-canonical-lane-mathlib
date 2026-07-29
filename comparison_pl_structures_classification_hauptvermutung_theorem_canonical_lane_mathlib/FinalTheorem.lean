@@ -1,0 +1,9 @@
+import comparison_pl_structures_classification_hauptvermutung_theorem_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace comparison_pl_structures_classification_hauptvermutung_theorem_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end comparison_pl_structures_classification_hauptvermutung_theorem_canonical_lane_mathlib
+end HautevilleHouse
